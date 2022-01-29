@@ -15,3 +15,10 @@ Yellow letters are ANL, Green letters are NAL, Grey letter are UNIOLY, Then you 
 
 ![B2](https://user-images.githubusercontent.com/98500513/151674488-b956a775-33fb-4df2-8fe1-a1690c1eca0b.png)
 
+##
+
+Yellow letters are AU, Green letters are AUE, Grey letter are VMG, Then you filter out 6 words only
+
+![C1](https://user-images.githubusercontent.com/98500513/151674574-f4c2800a-8087-434f-b0ca-072ba7812840.png)
+
+![C2](https://user-images.githubusercontent.com/98500513/151674576-e6e024aa-0f37-45e8-bb1c-49011fb4ed57.png)
