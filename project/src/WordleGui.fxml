@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WordleController">
+   <items>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <HBox prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#searchOnClick" text="Search">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <Label text=" " />
+                  <Button mnemonicParsing="false" onAction="#clearAllOnClick" text="Clear All">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+
+                  <Label text=" " />
+                  <Button mnemonicParsing="false" onAction="#helpOnClick" text="Help">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+
+                  <Label text="   columns">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="columnChoiceBox" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+                  <CheckBox fx:id="uppercaseCheckBox" mnemonicParsing="false" text="Upper case">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <GridPane fx:id="gridPane" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                   <TextField fx:id="greenTf1" />
+                  <TextField fx:id="greenTf2" GridPane.columnIndex="1" />
+                  <TextField fx:id="greenTf3" GridPane.columnIndex="2" />
+                  <TextField fx:id="greenTf4" GridPane.columnIndex="3" />
+                  <TextField fx:id="greenTf5" GridPane.columnIndex="4" />
+                  <TextField fx:id="yellowOneTf1" GridPane.rowIndex="1" />
+                  <TextField fx:id="yellowOneTf2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="yellowOneTf3" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="yellowOneTf4" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="yellowOneTf5" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <TextField fx:id="yellowTwoTf1" GridPane.rowIndex="2" />
+                  <TextField fx:id="yellowTwoTf2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="yellowTwoTf3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="yellowTwoTf4" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="yellowTwoTf5" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <TextField fx:id="yellowThreeTf1" GridPane.rowIndex="3" />
+                  <TextField fx:id="yellowThreeTf2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="yellowThreeTf3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="yellowThreeTf4" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <TextField fx:id="yellowThreeTf5" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </center>
+         <bottom>
+            <TextField fx:id="grayTf" style="-fx-control-inner-background: #B2B4B2;" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font></TextField>
+         </bottom>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets right="7.0" />
+         </padding>
+      </BorderPane>
+      <TextArea fx:id="resultTextArea" prefHeight="540.0" prefWidth="385.0">
+         <font>
+            <Font name="Courier New Bold" size="23.0" />
+         </font></TextArea>
+
+   </items>
+   <padding>
+      <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+   </padding>
+</SplitPane>
