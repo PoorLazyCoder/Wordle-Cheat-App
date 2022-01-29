@@ -1,8 +1,14 @@
 # Wordle-Cheat-App (JavaFx)
 Wordle Cheat App is a useful App to help players gain an advantage at Wordle, the new online word game catching on so fast on Twitter and Facebook. Use this JavaFx App to find the daily Wordle answer before your friends and show off your skills on social media.
 
-Java 8 is required to compile and run. IDE version is IntelliJ IDEA 2021.2
+Java 8 is required to compile and run. IDE version is IntelliJ IDEA 2021.2, just type
 
+```
+java -jar cheat-app.jar
+```
+
+
+##
 
 Yellow letters are LOLL, Green letters are O D, Grey letter are GVEHTSI, Then you filter out 8 words only
 
