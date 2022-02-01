@@ -33,4 +33,4 @@ Yellow letters are AU, Green letters are AUE, Grey letter are VMGS, Then you fil
 ![C2](https://user-images.githubusercontent.com/98500513/151674576-e6e024aa-0f37-45e8-bb1c-49011fb4ed57.png)
 
 ##
-Webpage version also avaiable  https://github.com/PoorLazyCoder/Wordle-Helper-Kotlin-JS
+Webpage version also available  https://github.com/PoorLazyCoder/Wordle-Helper-Kotlin-JS
